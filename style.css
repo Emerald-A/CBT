@@ -1,0 +1,252 @@
+html, body{
+    width: 100%;
+    height: 100%;
+    background: #def7fe;
+    background: url("images/bluedoodles.png");
+    background-position: fixed;
+    margin: 0;
+    overflow-y: hidden;
+}
+
+#animation1{
+    font-family: 'Mukta', sans-serif;
+    color: #ffffff;
+    font-size: 35px;
+    text-shadow: 3px 0px #03989e;
+    letter-spacing: 15px;
+    margin-top: 22%;
+    animation: animation1 linear 3s;
+    -webkit-animation: animation1 linear 3s;
+    -moz-animation: animation1 linear 3s;
+    -o-animation: animation1 linear 3s;
+    -ms-animation: animation1 linear 3s;
+    color: black;
+}
+
+/* Animation 1 Algorithm */
+@keyframes animation1 {
+    0% {opacity:0; text-shadow: 10px 0px #03989e;}
+    50% {opacity:1; text-shadow: 5px 0px #03989e;}
+    100% {opacity:0; text-shadow: 3px 0px #03989e;}
+}
+@-moz-keyframes animation1 {
+    0% {opacity:0; text-shadow: 10px 0px #03989e;}
+    50% {opacity:1; text-shadow: 5px 0px #03989e;}
+    100% {opacity:0; text-shadow: 3px 0px #03989e;}
+}
+@-webkit-keyframes animation1 {
+    0% {opacity:0; text-shadow: 10px 0px #03989e;}
+    50% {opacity:1; text-shadow: 5px 0px #03989e;}
+    100% {opacity:0; text-shadow: 3px 0px #03989e;}
+}
+@-o-keyframes animation1 {
+    0% {opacity:0; text-shadow: 10px 0px #03989e;}
+    50% {opacity:1; text-shadow: 5px 0px #03989e;}
+    100% {opacity:0; text-shadow: 3px 0px #03989e;}
+}
+@-ms-keyframes animation1 {
+    0% {opacity:0; text-shadow: 10px 0px #03989e;}
+    50% {opacity:1; text-shadow: 5px 0px #03989e;}
+    100% {opacity:0; text-shadow: 3px 0px #03989e;}
+}
+
+
+
+.animation2{
+    height: 8%;
+    width: 8%;
+    margin-top: 20%;
+    animation: animation2 linear 4s;
+    -webkit-animation: animation2 linear 4s;
+    -moz-animation: animation2 linear 4s;
+    -o-animation: animation2 linear 4s;
+    -ms-animation: animation2 linear 4s;
+    display: none;
+}
+
+/* Animation 2 Algorithm */
+@keyframes animation2 {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+@-moz-keyframes animation2 {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+@-webkit-keyframes animation2 {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+@-o-keyframes animation2 {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+@-ms-keyframes animation2 {
+    0% {opacity:0;}
+    50% {opacity:1;}
+    100% {opacity:0;}
+}
+
+
+.container{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    animation: animation3 linear 2s;
+    -webkit-animation: animation3 linear 2s;
+    -moz-animation: animation3 linear 2s;
+    -o-animation: animation3 linear 2s;
+    -ms-animation: animation3 linear 2s;
+}
+.containerText{
+    width: 60%;
+    height: 100%;
+    background: transparent;
+    background-image: url(images/Shapes.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    float: left;
+    line-height: 10px;
+    padding-top: 17%;
+}
+.containerText h1{
+    font-family: 'Jost', sans-serif;
+    font-size:170px;
+    width: 60%;
+    margin-left: 5%;
+    color: #008996;
+}
+.containerText h4{
+    font-family: 'Jost', sans-serif;
+    font-size:60px;
+    width: 60%;
+    margin-left: 5%;
+    color: #3b3c3c;
+}
+.containerText h6{
+    font-family: 'Exo', sans-serif;
+    font-size:20px;
+    width: 60%;
+    margin-left: 5%;
+    color: #3b3c3c;
+}
+.containerForm{
+    width: 40%;
+    height: 100%;
+    background: white;
+    background-image: url(images/Doodles.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position-y: 12em;
+    background-repeat: repeat-y;
+    float: right;
+}
+.formCard{
+    width: 34%;
+    min-height: 20%;
+    max-height: 50%;
+    position: fixed;
+    background: #008996;
+    margin-top: 8%;
+    margin-left: 1%;
+    border-radius: 20px;
+    padding: 2%;
+    padding-bottom: 10%;
+    z-index: 1;
+    padding-top: 0;
+}
+.formInput{
+    width: 85%;
+    padding: 15px;
+    margin-top: 10%;
+    margin-bottom: 5%;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px;
+    outline: none;
+    border-radius: 20px;
+    border: none;
+}
+.formButton{
+    width: 40%;
+    font-family: 'Hind Madurai', sans-serif;
+    font-size: 20px !important;
+    font-weight: 700;
+    border-radius: 20px;
+    border: none;
+    background: #008996;
+    color: white;
+    padding: 2%;
+    margin-bottom: 3%;
+}
+.formButton:hover{
+    background: #3b3c3c;
+    /* color: #008996; */
+}
+
+.formCard h1{
+    font-family: 'Fredoka', sans-serif;
+    color: white;
+    font-size: 55px;
+}
+.formCard p{
+    font-family: 'Mukta', sans-serif;
+    color: white;
+    font-size: 20px;
+    max-height: 50% !important;
+}
+@keyframes animation3 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-moz-keyframes animation3 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-webkit-keyframes animation3 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-o-keyframes animation3 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+@-ms-keyframes animation3 {
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+.Text{
+    max-height: 70%!important;
+    width: 100%;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    margin-left: 1%;
+}
+.header{
+    position: fixed;
+    z-index: 1;
+    background: #008996;
+    width: 35%;
+    margin-bottom: 40%;
+    margin-top: 0;
+}
+.footer{
+    position: fixed;
+    z-index: 1;
+    background: #008996;
+    width: 35%;
+}
+.displayNone{
+    display:none;
+}
+.displayBlock{
+    display:block;
+}
+.displayFlex{
+    display:flex;
+}
