@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="cbt.css">
+</head>
+<style>
+    .overlay{
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        bottom: 5px solid #000;
+        width: 300px;
+        height: 200px;
+        background: rgba(0,0,0,0.5);
+        margin: auto;
+        color: #fff;
+        display: none;
+    }
+    #modal{
+        max-width: 600px;
+        margin: auto;
+        height: 300px;
+        background: #fff;
+        color: #000;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    #close,#open{
+        background-color: black;
+    color: white; 
+    font-size: medium;
+    /* left: 250px; */
+    border-radius: 5px;
+    /* top: 30px; */
+    border: none;
+    position: relative;
+    padding: 10px 10px;
+    }
+</style>
+<body>
+<div id="mod" class="overlay">
+    <div id="modal">
+        <h1>Are you sure you want to submit?</h1>
+
+        <p>You will not be able to return!</p>
+      <button id="close"> YES</button>
+      <button id="open"> NO</button>
+    </div>
+
+</div>
+
+    <div class="container">
+        <div class="quiz-box">
+            <div class="quiz-header">
+                <h1>CBT</h1> <span id="spa"> </span>
+                <p id="demo">Timer :  <span style="font-size: 22px;"> 0 0 : 0 0 </span></p>
+            </div>
+            <div class="question" id="quiz">
+                <!-- <h2>Q1: </h2>
+                <p>What is the name of the tallest mountain in africa</p> -->
+            </div>
+            <!-- <div class="options">
+                <div class="option">
+                    <input type="checkbox" style="width: 20px; height: 20px;" />
+                    <p> <span>A.</span> Mount Everest</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" style="width: 20px; height: 20px;" />
+                    <p> <span>B.</span> Mount Kilimanjaro</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" style="width: 20px; height: 20px;" />
+                    <p> <span>C.</span> Mount Zuma</p>
+                </div>
+                <div class="option">
+                    <input type="checkbox" style="width: 20px; height: 20px;" />
+                    <p> <span>D.</span> Olumo Rock</p>
+                </div>
+            </div> -->
+            <div class="buttons">
+                <button id="id-p" onclick="prev()" class="btn blue">Prev</button>
+                <button id="id" onclick="next()" class="btn blue" >Next</button>
+                <button id="id-s" style="display: none;" onclick="" class="btn blue" >Submit</button>
+            </div>
+            <div class="question-no">
+                <!-- <button onclick="one()" class="num-btn num-btn-active ">1</button>
+                <button onclick="two()" class="num-btn">2</button>
+                <button onclick="tree()" class="num-btn">3</button>
+                <button class="num-btn">4</button>
+                <button class="num-btn">5</button>
+                <button class="num-btn">6</button>
+                <button class="num-btn">7</button>
+                <button class="num-btn">8</button>
+                <button class="num-btn">9</button>
+                <button class="num-btn">9</button> -->
+            </div>
+        </div> 
+    </div>
+
+    <script>
+        const startingMinutes = 1;
+        let time = startingMinutes * 60;
+
+        const countdownEL = document.getElementById("demo");
+
+        setInterval(updateCountdown, 1000);
+
+        function updateCountdown(){
+            const minutes = Math.floor(time / 60);
+            let seconds = time % 60;
+
+            seconds = seconds < 10 ? "0" + seconds : seconds;
+
+            countdownEL.innerHTML = `
+            ${minutes}: ${seconds}
+            `
+            time--;
+            
+            if(time == 0){
+                alert("Time's Up");
+              
+            document.getElementById("quiz").innerHTML = `
+            <div>
+                <h1>
+                    You have completed your assessment!!!
+                </h1>
+                <p> Your score is: ${score}</p>
+            </div>
+           
+             `
+             document.getElementById("mod").style.display = "none"
+             document.getElementById("id-p").style.display = "none";
+             document.getElementById("id").style.display = "none";
+             document.getElementById("id-s").style.display = "none";
+             document.getElementById("demo").style.display = "none";
+                    
+        }
+    }
+        
+
+
+
+       
+      
+    </script>
+
+
+    <script src="cbt.js"></script>
+</body>
+</html>
+
+

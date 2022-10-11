@@ -8,7 +8,7 @@ html, body{
     overflow-y: hidden;
 }
 
-#animation1{
+.animation1{
     font-family: 'Mukta', sans-serif;
     color: #ffffff;
     font-size: 35px;
@@ -177,11 +177,13 @@ html, body{
     font-size: 20px !important;
     font-weight: 700;
     border-radius: 20px;
+    border:1px solid #000000;
     border: none;
-    background: #008996;
+    background: #625551;
     color: white;
     padding: 2%;
     margin-bottom: 3%;
+    position: relative;
 }
 .formButton:hover{
     background: #3b3c3c;
@@ -221,9 +223,10 @@ html, body{
 }
 
 .Text{
+    position: relative;
     max-height: 70%!important;
     width: 100%;
-    margin-top: 20%;
+    margin-top: 30%;
     margin-bottom: 30%;
     margin-left: 1%;
 }

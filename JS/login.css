@@ -1,0 +1,50 @@
+#a{
+    background-image: url(../Images/Shapes.png);
+    width: 350px;
+     height: 220px;
+      /* background: #cfdef3; */
+    box-shadow: 0 0 10px rgb(117, 115, 115);
+     margin: auto;
+      margin-top: 50px;
+}
+body{
+  background-image: url(../Images/bluedoodles.png);
+}
+#b{
+    /* background-color: rgb(62, 62, 179);  */
+    background-color: black;
+    color: white; 
+    font-size: medium;
+    left: 250px;
+    border-radius: 5px;
+    top: 30px;
+    border: none;
+    position: relative;
+    padding: 10px 10px;
+   
+}
+#img{
+    width: 100px;
+     height: 100px;
+     position: relative; 
+     left: 600px; 
+}
+#f{
+    margin-left: 20px;
+    padding-top: 10px;
+}
+#c{
+    margin-left: 20px;
+}
+#n{
+    width: 300px; height: 30px; 
+     box-shadow: 0 0 10px gainsboro;
+     outline: none;
+     border: none;
+}
+#nm{
+    width: 300px; height: 30px; outline: none;
+     box-shadow: 0 0 10px gainsboro; 
+     margin-top: 20px;
+     border: none;
+}
